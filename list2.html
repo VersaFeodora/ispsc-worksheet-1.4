@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Training List</title>
+    </head>
+
+    <body>
+        <h1>Training: Creative Web Design</h1>
+
+        <h3>Learning Outcome:</h3>
+        <ul type="square">
+            <li>Create basic website using HTML5</li>
+            <li>Apply basic HTML tags for displaying information in the webpage</li>
+            <li>Write HTML code using any available text editor e.g. Notepad for Windows</li>
+            <li>Executes HTML pages on different browsers</li>
+            <li>Create list, table, and links in the webpage</li>
+            <li>Design the webpage using basic CSS and Bootstrap 4</li>
+        </ul>
+
+        <h3>Expected Outputs:</h3>
+        <ol start="10">
+            <li>About Us Webpage using HTML and CSS</li>
+            <li>List and Tables webpage using HTML and CSS</li>
+            <li>Links, list, and table webpage using HTML and CSS</li>
+            <li>Container, Link Buttons, Alerts, and Color using HTML and Bootstrap</li>
+            <li>Navigations, List, and Tables Webpage Using HTML and Bootstrap</li>
+            <li>Card and Carousel</li>
+        </ol>
+
+        <h3>List of Topics</h3>
+        <ol type="A" start="11">
+            <li>HTML Basic Elements</li>
+            <li>HTML Basic Formatting</li>
+            <li>HTML CSS</li>
+            <li>HTML Links</li>
+            <li>HTML Images</li>
+            <li>HTML Table</li>
+            <li>HTML List</li>
+            <li>BS4 Containers</li>
+            <li>BS4 Navigation and Table</li>
+            <li>BS4 Images</li>
+            <li>BS4 Alerts and Buttons</li>
+            <li>BS4 List Group</li>
+            <li>BS4 Card and Carousel</li>
+        </ol>
+        <p><em>Reference: <a href="https://w3schools.com/"><b>w3schools.com</b></a></em></p>
+    </body>
+
+    <style>
+        body{
+            counter-reset: section-counter;
+            padding:30 30 0 30;
+            margin: 0;
+            font-family: sans-serif;
+            background-color: beige;
+        }
+        h1{
+            padding: 30 0 0 0;
+            font-size: xx-large;
+            text-align: center;
+            color: chocolate;
+        }
+        h3{
+            counter-increment: section-counter;
+            padding: 10;
+            background-color: chocolate;
+            color: beige;
+        }
+        h3::before{
+            content: counter(section-counter, upper-roman)". ";
+        }
+        p, a{
+            padding: 10;
+            text-align: center;
+            background-color: chocolate;
+            color: beige;
+        }
+        li{
+            color: chocolate;
+            line-height: 2;
+        }
+    </style>
+</html>
